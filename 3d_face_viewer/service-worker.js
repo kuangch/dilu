@@ -1,4 +1,4 @@
-importScripts("precache-manifest.df7e8c0dcc0dd31c7768d927bf6e13c6.js", "workbox-v4.3.1/workbox-sw.js");
+importScripts("precache-manifest.4d30f4ac5c65cd85bf495b958b3b7756.js", "workbox-v4.3.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "workbox-v4.3.1"});
 /* ========================================
  *  company : Dilusense
@@ -8,16 +8,16 @@ workbox.setConfig({modulePathPrefix: "workbox-v4.3.1"});
 
 // set the prefix and suffix of our sw's name
 workbox.core.setCacheNameDetails({
-    prefix: '3d-face',
+    prefix: 'browse-exp',
     suffix: 'v1.0.0',
 });
 // have our sw update and control a web page as soon as possible.
 workbox.core.skipWaiting();
 workbox.core.clientsClaim();
 
-// workbox.expiration.Plugin({
-//     purgeOnQuotaError: true
-// });
+workbox.expiration.Plugin({
+    purgeOnQuotaError: true
+});
 
 // vue-cli3.0 supports pwa with the help of workbox-webpack-plugin, we need to get the precacheing list through this sentence.
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
