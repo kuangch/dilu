@@ -1,5 +1,5 @@
-importScripts("precache-manifest.a48c7d121f2a96d1573884af8f7a7a9b.js", "workbox-v4.3.1/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "workbox-v4.3.1"});
+importScripts("/precache-manifest.a92230fb08b3d91e1ad44715ea6db9e6.js", "/workbox-v4.3.1/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "/workbox-v4.3.1"});
 /* ========================================
  *  company : Dilusense
  *   author : Kuangch
